@@ -1,6 +1,6 @@
 <?php
 
-//基础配置文件   ver 0.1
+/* 基础配置文件   ver 0.1 */
 
 define('DB_USER', 'root'); //用户名
 define('DB_PAWD', ''); //密码
