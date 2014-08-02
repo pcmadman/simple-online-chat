@@ -1,11 +1,30 @@
 <?php
+/*
+------------------------------------------
+Name：返回信息控制
+------------------------------------------
+Version：0.1
+------------------------------------------
+Last modified time ：2014-07-30 21:53:39
+------------------------------------------
+Last modified by ：pcmadman
+------------------------------------------
+Email ：pcmadman@live.cn
+------------------------------------------
+行为：
+    简单的注入防范
+    返回最后N条消息
+    插入一条消息到数据库
+------------------------------------------
+*/
 
 /* 引用头文件 */
+include_once 'php_header.php' ;
+
 if ( empty ( $_POST ) ) {
-    die ( "Mail to :<a href=\"mailto:pcmadman@live.cn\">PCmadman</a>" ) ;
+    die ( "Mail to :<a href='mailto:".WEB_MASTER."'>PCmadman</a>" ) ;
 }
 
-include_once 'php_header.php' ;
 
 /* 声明变量 */
 $least_id ; //客户端屏幕上显示的最后ID
